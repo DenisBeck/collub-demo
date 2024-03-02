@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240302064158">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240303040820">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -307,7 +307,7 @@
 											<div class="catalog-item__key">Итоговая цена:</div>
 											<div class="catalog-item__value">$14 500</div>
 										</div>
-										<button class="catalog-item__link">
+										<button class="catalog-item__link" data-popup="#popup-car">
 											<span>Подробнее</span>
 											<svg width="13.671387" height="13.671387" viewBox="0 0 13.6714 13.6714" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -1491,7 +1491,7 @@
 							</div>
 							<div class="form__input">
 								<div class="form__label">Ваш номер<span>*</span></div>
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+7 XXX XXX-XX-XX" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+7 XXX XXX-XX-XX" class="input input_phone">
 							</div>
 							<div class="form__textarea">
 								<div class="form__label">Комментарий</div>
@@ -1612,7 +1612,7 @@
 						</div>
 					</div>
 					<div class="main-footer__map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.8331958296503!2d30.286558142876796!3d60.06756496281554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963524d6f986cf%3A0xb1c5d1f10487d75b!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMTIsIFNhbmt0LVBldGVyYnVyZywgUnVzc2lhLCAxOTQzNjI!5e0!3m2!1sen!2sau!4v1709326520909!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.8331958296503!2d30.286558142876796!3d60.06756496281554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963524d6f986cf%3A0xb1c5d1f10487d75b!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMTIsIFNhbmt0LVBldGVyYnVyZywgUnVzc2lhLCAxOTQzNjI!5e0!3m2!1sen!2sau!4v1709326520909!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 					</div>
 				</div>
 				<div class="footer__bottom bottom-footer">
@@ -1622,17 +1622,99 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup-car" aria-hidden="true" class="popup popup-car">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup-car__content">
+					<div class="popup-car__title">
+						2023 Toyota Corolla Cross
+					</div>
+					<div class="popup-car__chars">
+						<div class="popup-car__key">Состояние</div>
+						<div class="popup-car__value">☆☆☆☆☆</div>
+						<div class="popup-car__key">Пробег</div>
+						<div class="popup-car__value">5000 км</div>
+						<div class="popup-car__key">Кузов</div>
+						<div class="popup-car__value">Кроссовер</div>
+						<div class="popup-car__key">Двигатель</div>
+						<div class="popup-car__value">Гибрид</div>
+						<div class="popup-car__key">Топливо</div>
+						<div class="popup-car__value">Бензин</div>
+						<div class="popup-car__key">Привод</div>
+						<div class="popup-car__value">Передний</div>
+						<div class="popup-car__key">КПП</div>
+						<div class="popup-car__value">Бесступенчатая коробка передач</div>
+						<div class="popup-car__key">Багажник</div>
+						<div class="popup-car__value">От 390 л (5 мест) до 1299 л (2 места)</div>
+					</div>
+					<div class="popup-car__price car-price">
+						<div class="car-price__title">Стоимость во Владивостоке</div>
+						<div data-tabs class="car-price__tabs tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title _tab-active">USD</button>
+								<button type="button" class="tabs__title">EUR</button>
+								<button type="button" class="tabs__title">RUB</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									$25 500
+								</div>
+								<div class="tabs__body">
+									€23 500
+								</div>
+								<div class="tabs__body">
+									2 336 692 ₽
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup-car__details car-details">
+						<div data-tabs class="car-details__tabs tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title _tab-active">Описание</button>
+								<button type="button" class="tabs__title">Характеристики</button>
+								<button type="button" class="tabs__title">Видеообзор</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<p>Toyota Corolla Cross — это японский кроссовер-внедорожник, который выпускается компанией Тойота с 2020 года. Изначально автомобиль выпускался только в Юго-Восточной Азии, и только в последнее время он производится как на Востоке, так и на Западе. Автомобиль предназначен как для поездок в городе, так и для путешествий в том числе и по пересеченной местности.</p>
+									<p>Его дизайн, хотя и не запоминающийся, по крайней мере, склоняется к симпатичному концу спектра, а более спортивная версия добавляет немного визуального интереса к привлекательности Corolla Cross.</p>
+									<p>Основной двигатель — 2,0-литровый анемичный четырехцилиндровый мощностью 169 л.с., но опциональная гибридная система добавляет три электромотора для увеличения совокупной эффективности до 196 л.с. Corolla Cross находится на узкой линии между меньшим C-HR и самым большим из модельного ряда Toyota, RAV4, и сталкивается с такими популярными соперниками, как Jeep Compass.</p>
+								</div>
+								<div class="tabs__body">
+									<div class="tabs__chars">
+										<div class="tabs__key">Марка</div>
+										<div class="tabs__value">Toyota</div>
+										<div class="tabs__key">модель</div>
+										<div class="tabs__value">Corolla Cross</div>
+										<div class="tabs__key">Год</div>
+										<div class="tabs__value">2023</div>
+										<div class="tabs__key">Цвет</div>
+										<div class="tabs__value">Черный</div>
+										<div class="tabs__key">Тип привода</div>
+										<div class="tabs__value">XSE Hybrid</div>
+										<div class="tabs__key">Мощность двигателя, л.с.</div>
+										<div class="tabs__value">109</div>
+										<div class="tabs__key">Разгон до 100 км/ч, сек</div>
+										<div class="tabs__value">4,5</div>
+										<div class="tabs__key">Количество мест</div>
+										<div class="tabs__value">5</div>
+										<div class="tabs__key">Статус</div>
+										<div class="tabs__value">Под заказ</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/eqsU-kBOjkk?si=ZTGZQETxUj_jUHNd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20240302064158"></script>
+	<script src="js/app.min.js?_v=20240303040820"></script>
 </body>
 
 </html>
