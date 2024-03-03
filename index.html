@@ -6,7 +6,15 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240303040820">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20240304011021">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?_v=20240304011021" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240304011021">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?_v=20240304011021"></script>
+	<script>
+		new WOW().init();
+	</script>
+
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +28,7 @@
 					<div class="nav-header__top top-nav-header">
 						<ul class="top-nav-header__list">
 							<li class="top-nav-header__item" data-da=".bottom-nav-header__list,991.98">
-								<a href="#news" class="top-nav-header__link">Новости</a>
+								<a href="#news" class="top-nav-header__link ">Новости</a>
 							</li>
 							<li class="top-nav-header__item" data-da=".bottom-nav-header__list,991.98">
 								<a href="#faq" class="top-nav-header__link">FAQ</a>
@@ -36,7 +44,7 @@
 					</div>
 					<div class="nav-header__bottom bottom-nav-header" data-da=".top-nav-header, 767.98,first">
 						<div class="bottom-nav-header__logo logo">
-							<a href="/" class="logo__link">
+							<a href="#" class="logo__link">
 								<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo" class="logo__img"></picture>
 							</a>
 						</div>
@@ -72,7 +80,7 @@
 			<div class="header__hero hero-header">
 				<div class="hero-header__container">
 					<div class="hero-header__content">
-						<h1 class="hero-header__title title">
+						<h1 class="hero-header__title title" data-aos="fade-in" data-aos-duration="600">
 							Pассчёт <span class="title__accent title__accent_blue">стоимости</span> авто
 						</h1>
 						<form action="#" class="hero-header__form form" data-one-select>
@@ -126,7 +134,7 @@
 							<button class="form__button button hero-header__button" type="submit">Подобрать авто</button>
 						</form>
 					</div>
-					<div class="hero-header__image" data-da=".hero-header__content,767.98,1">
+					<div class="hero-header__image" data-da=".hero-header__content,767.98,1" data-aos="fade-left" data-aos-duration="750">
 						<div class="hero-header__image-wrapper">
 							<picture><source srcset="img/hero/hero.webp" type="image/webp"><img src="img/hero/hero.png" alt="hero"></picture>
 						</div>
@@ -137,29 +145,31 @@
 		<main class="page">
 			<section class="page__advantages advantages" id="advantages">
 				<div class="advantages__container">
-					<h2 class="advantages__title title">преимущества <span class="title__accent title__accent_red">покупки автомобиля</span> из Японии под заказ</h2>
+					<h2 class="advantages__title title" data-aos="fade-right">
+						преимущества <span class="title__accent title__accent_red">покупки автомобиля</span> из Японии под заказ
+					</h2>
 					<ul class="advantages__list">
-						<li class="advantages__item advantages-item">
+						<li class="advantages__item advantages-item" data-aos="fade-in" data-aos-offset="200">
 							<div class="advantages-item__title">Выгодно</div>
 							<div class="advantages-item__desc">Заказав авто из Японии, Вы сэкономите от 100.000 до 250.000 рублей на аналогичный автомобиль</div>
 						</li>
-						<li class="advantages__item advantages-item">
+						<li class="advantages__item advantages-item" data-aos="fade-in" data-aos-offset="200">
 							<div class="advantages-item__title">Новое ПТС</div>
 							<div class="advantages-item__desc">Вы будете единственным владельцем в ПТС. Это значительное преимущество при продаже автомобиля</div>
 						</li>
-						<li class="advantages__item advantages-item">
+						<li class="advantages__item advantages-item" data-aos="fade-in" data-aos-offset="200">
 							<div class="advantages-item__title">Без пробега по России</div>
 							<div class="advantages-item__desc">Японцы всегда обслуживают свои автомобили по гарантии в сервисных центрах. Только оригинальные запчасти и жидкости</div>
 						</li>
-						<li class="advantages__item advantages-item">
+						<li class="advantages__item advantages-item" data-aos="fade-in" data-aos-offset="200">
 							<div class="advantages-item__title">Аукционы</div>
 							<div class="advantages-item__desc">Машины в японии продаются через аукционы и получают оценку. Вы будете знать техническое состояние автомобиля, был ли он бит или крашен, участвовал ли в ДТП и пр.</div>
 						</li>
-						<li class="advantages__item advantages-item">
+						<li class="advantages__item advantages-item" data-aos="fade-in" data-aos-offset="200">
 							<div class="advantages-item__title">Выбор</div>
 							<div class="advantages-item__desc">Более 10.000 автомобилей продаются на японских аукционах ежедневно. Всегда можно подобрать авто под ваш бюджет и требования</div>
 						</li>
-						<li class="advantages__item advantages-item">
+						<li class="advantages__item advantages-item" data-aos="fade-in" data-aos-offset="200">
 							<div class="advantages-item__title">Гарантии</div>
 							<div class="advantages-item__desc">Вы оплачиваете счет через банк, а не переводите средства частным лицам</div>
 						</li>
@@ -169,32 +179,32 @@
 			<section class="page__steps steps">
 				<div class="steps__container">
 					<div class="steps__header">
-						<h2 class="steps__title title">Авто из японии за <span class="title__accent title__accent_red">5</span> шагов</h2>
-						<div class="steps__subtitle">Мы превращаем процесс приобретения автомобиля из Японии на аукционах в пять простых и удобных шагов, делая ваш выбор легким и надежным</div>
+						<h2 class="steps__title title" data-aos="fade-right">Авто из японии за <span class="title__accent title__accent_red">5</span> шагов</h2>
+						<div class="steps__subtitle" data-aos="fade-left" data-aos-delay="150">Мы превращаем процесс приобретения автомобиля из Японии на аукционах в пять простых и удобных шагов, делая ваш выбор легким и надежным</div>
 					</div>
 					<div class="steps__body">
 						<ul class="steps__list">
-							<li class="steps__item">
+							<li class="steps__item" data-aos="zoom-in" data-aos-offset="200" data-aos-mirror="false">
 								<div class="steps__count">1</div>
 								<div class="steps__stage">Заявка</div>
 								<div class="steps__text">Отправляете заявку или связываетесь с нами</div>
 							</li>
-							<li class="steps__item">
+							<li class="steps__item" data-aos="zoom-in" data-aos-offset="400" data-aos-mirror="false">
 								<div class="steps__count">2</div>
 								<div class="steps__stage">Вопросы</div>
 								<div class="steps__text">Менеджер отвечает на вопросы и показывает авто под ваш бюджет</div>
 							</li>
-							<li class="steps__item steps__item_middle">
+							<li class="steps__item steps__item_middle" data-aos="zoom-in" data-aos-offset="300" data-aos-mirror="false">
 								<div class="steps__count">3</div>
 								<div class="steps__stage">Договор</div>
 								<div class="steps__text">Заключаем договор и менеджер отправляем вам варианты</div>
 							</li>
-							<li class="steps__item">
+							<li class="steps__item" data-aos="zoom-in" data-aos-offset="200" data-aos-mirror="false">
 								<div class="steps__count">4</div>
 								<div class="steps__stage">Аукцион</div>
 								<div class="steps__text">После покупки на аукционе и оплачиваете его в банке</div>
 							</li>
-							<li class="steps__item">
+							<li class="steps__item" data-aos="zoom-in" data-aos-offset="300" data-aos-mirror="false">
 								<div class="steps__count">5</div>
 								<div class="steps__stage">Оплата</div>
 								<div class="steps__text">Оплачиваете пошлину за автомобиль, нашу комиссию и забираете свой автомобиль</div>
@@ -206,43 +216,43 @@
 			<section class="page__benefits benefits">
 				<div class="benefits__container">
 					<div class="benefits__header">
-						<h2 class="benefits__title title"><span class="title__accent title__accent_red">преимущества</span> работы с нами</h2>
-						<div class="benefits__status">Компания #1</div>
+						<h2 class="benefits__title title" data-aos="fade-left" data-aos-offset="50"><span class="title__accent title__accent_red">преимущества</span> работы с нами</h2>
+						<div class="benefits__status" data-aos="fade-right" data-aos-delay="150">Компания #1</div>
 					</div>
 					<ul class="benefits__list">
-						<li class="benefits__item">
+						<li class="benefits__item" data-aos="fade-in">
 							<div class="benefits__image"><picture><source srcset="img/benefits/user.webp" type="image/webp"><img src="img/benefits/user.png" alt="user"></picture></div>
 							<div class="benefits__text">Работаем только с крупными и проверенными транспортными компаниями</div>
 						</li>
-						<li class="benefits__item">
+						<li class="benefits__item" data-aos="fade-in" data-aos-offset="150" data-aos-delay="50">
 							<div class="benefits__image"><picture><source srcset="img/benefits/access.webp" type="image/webp"><img src="img/benefits/access.png" alt="access"></picture></div>
 							<div class="benefits__text">Доступ ко всем аукционам Японии</div>
 						</li>
-						<li class="benefits__item">
+						<li class="benefits__item" data-aos="fade-in" data-aos-offset="150" data-aos-delay="100">
 							<div class="benefits__image"><picture><source srcset="img/benefits/manager.webp" type="image/webp"><img src="img/benefits/manager.png" alt="manager"></picture></div>
 							<div class="benefits__text">Профессиональные менеджеры</div>
 						</li>
-						<li class="benefits__item">
+						<li class="benefits__item" data-aos="fade-in" data-aos-offset="150" data-aos-delay="150">
 							<div class="benefits__image"><picture><source srcset="img/benefits/delivery.webp" type="image/webp"><img src="img/benefits/delivery.png" alt="delivery"></picture></div>
 							<div class="benefits__text">Доставка в любой регион России - авиа/жд/автовозы</div>
 						</li>
-						<li class="benefits__item">
+						<li class="benefits__item" data-aos="fade-in" data-aos-offset="150" data-aos-delay="200">
 							<div class="benefits__image"><picture><source srcset="img/benefits/service.webp" type="image/webp"><img src="img/benefits/service.png" alt="service"></picture></div>
 							<div class="benefits__text">Услуга по срочной покупке</div>
 						</li>
-						<li class="benefits__item">
+						<li class="benefits__item" data-aos="fade-in" data-aos-offset="150" data-aos-delay="250">
 							<div class="benefits__image"><picture><source srcset="img/benefits/participate.webp" type="image/webp"><img src="img/benefits/participate.png" alt="participate"></picture></div>
 							<div class="benefits__text">Клиент принимает непосредственное участие в торгах</div>
 						</li>
-						<li class="benefits__item">
+						<li class="benefits__item" data-aos="fade-in" data-aos-offset="150" data-aos-delay="300">
 							<div class="benefits__image"><picture><source srcset="img/benefits/enjoy.webp" type="image/webp"><img src="img/benefits/enjoy.png" alt="enjoy"></picture></div>
 							<div class="benefits__text">Тысячи довольных клиентов по всей России</div>
 						</li>
-						<li class="benefits__item">
+						<li class="benefits__item" data-aos="fade-in" data-aos-offset="150" data-aos-delay="350">
 							<div class="benefits__image"><picture><source srcset="img/benefits/pay.webp" type="image/webp"><img src="img/benefits/pay.png" alt="pay"></picture></div>
 							<div class="benefits__text">Оплата на счет ООО</div>
 						</li>
-						<li class="benefits__item">
+						<li class="benefits__item" data-aos="fade-in" data-aos-offset="150" data-aos-delay="400">
 							<div class="benefits__image"><picture><source srcset="img/benefits/open.webp" type="image/webp"><img src="img/benefits/open.png" alt="open"></picture></div>
 							<div class="benefits__text">Никаких скрытых комиссий</div>
 						</li>
@@ -252,32 +262,32 @@
 			<section class="page__credit credit">
 				<div class="credit__container">
 					<div class="credit__header">
-						<div class="credit__subtitle">Мы предлагаем гибкие финансовые решения, включая <span class="title__accent title__accent_red">кредит и рассрочку</span>, чтобы сделать процесс приобретения автомобиля у нас еще более доступным и удобным для вас</div>
-						<h1 class="credit__title title">кредит и рассрочка</h1>
+						<div class="credit__subtitle" data-aos="fade-right">Мы предлагаем гибкие финансовые решения, включая <span class="title__accent title__accent_red">кредит и рассрочку</span>, чтобы сделать процесс приобретения автомобиля у нас еще более доступным и удобным для вас</div>
+						<h1 class="credit__title title" data-aos="fade-left" data-aos-delay="150">кредит и рассрочка</h1>
 					</div>
 					<div class="credit__conditions credit-conditions">
-						<div class="credit-conditions__item">
+						<div class="credit-conditions__item" data-aos="fade-in">
 							<h3 class="credit-conditions__title">Гибкие финансовые условия</h3>
 							<div class="credit-conditions__text">Наша компания предоставляет разнообразные варианты кредитования и рассрочки, чтобы каждый клиент мог выбрать оптимальный для себя план оплаты</div>
 						</div>
-						<div class="credit-conditions__item">
+						<div class="credit-conditions__item" data-aos="fade-in" data-aos-delay="150">
 							<h3 class="credit-conditions__title">Экономия времени и усилий</h3>
 							<div class="credit-conditions__text">Мы обеспечиваем быстрое и удобное оформление кредита, что позволяет вам сосредоточиться на выборе и покупке автомобиля, а не на финансовых формальностях.</div>
 						</div>
-						<div class="credit-conditions__item">
+						<div class="credit-conditions__item" data-aos="fade-in" data-aos-delay="300">
 							<h3 class="credit-conditions__title">Удобство и доступность</h3>
 							<div class="credit-conditions__text">Благодаря кредиту или рассрочке, вы можете получить желаемый автомобиль прямо сейчас, а затем оплачивать его постепенно, без необходимости расходовать всю сумму сразу</div>
 						</div>
 					</div>
-					<div class="credit__image"><picture><source srcset="img/credit/image.webp" type="image/webp"><img src="img/credit/image.png" alt="credit"></picture></div>
+					<div class="credit__image" data-aos="flip-down" data-aos-offset="350"><picture><source srcset="img/credit/image.webp" type="image/webp"><img src="img/credit/image.png" alt="credit"></picture></div>
 				</div>
 			</section>
 			<section id="catalog" class="page__catalog catalog">
 				<div class="catalog__container">
-					<h2 class="catalog__title title">Каталог</h2>
+					<h2 class="catalog__title title" data-aos="fade-right">Каталог</h2>
 					<div class="catalog__body">
 						<ul class="catalog__list">
-							<li class="catalog__item catalog-item">
+							<li class="catalog__item catalog-item" data-aos="zoom-in" data-aos-mirror="false">
 								<div class="catalog-item__info">
 									<div class="catalog-item__name">
 										<svg width="25.000000" height="15.865723" viewBox="0 0 25 15.8657" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -318,7 +328,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="catalog__item catalog-item">
+							<li class="catalog__item catalog-item" data-aos="zoom-in" data-aos-delay="150" data-aos-mirror="false">
 								<div class="catalog-item__info">
 									<div class="catalog-item__name">
 										<svg width="25.000000" height="15.865723" viewBox="0 0 25 15.8657" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -359,7 +369,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="catalog__item catalog-item" data-da=".catalog-showmore__content,767.98,first">
+							<li class="catalog__item catalog-item" data-da=".catalog-showmore__content,767.98,first" data-aos="zoom-in" data-aos-delay="300" data-aos-mirror="false">
 								<div class="catalog-item__info">
 									<div class="catalog-item__name">
 										<svg width="25.000000" height="15.865723" viewBox="0 0 25 15.8657" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -400,7 +410,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="catalog__item catalog-item" data-da=".catalog-showmore__content,767.98,first">
+							<li class="catalog__item catalog-item" data-da=".catalog-showmore__content,767.98,first" data-aos="zoom-in" data-aos-delay="450" data-aos-mirror="false">
 								<div class="catalog-item__info">
 									<div class="catalog-item__name">
 										<svg width="25.000000" height="15.865723" viewBox="0 0 25 15.8657" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -619,45 +629,45 @@
 			</section>
 			<section id="whyus" class="page__whyus whyus">
 				<div class="whyus__container">
-					<h2 class="whyus__title title">Почему стоит привозить авто <span class="title__accent title__accent_red">через нас?</span></h2>
+					<h2 class="whyus__title title" data-aos="fade-left">Почему стоит привозить авто <span class="title__accent title__accent_red">через нас?</span></h2>
 					<div class="whyus__body">
 						<div class="whyus__content">
 							<ul class="whyus__list">
-								<li class="whyus__item whyus-item">
+								<li class="whyus__item whyus-item" data-aos="zoom-in-left" offset="180">
 									<div class="whyus-item__image"><picture><source srcset="img/whyus/pay.webp" type="image/webp"><img src="img/whyus/pay.png" alt=""></picture></div>
 									<div class="whyus-item__text">Наша комиссия 40.000 рублей, а предоплата 50%</div>
 								</li>
-								<li class="whyus__item whyus-item">
+								<li class="whyus__item whyus-item" data-aos="zoom-in-up" delay="50" offset="180">
 									<div class="whyus-item__image"><picture><source srcset="img/whyus/parking.webp" type="image/webp"><img src="img/whyus/parking.png" alt=""></picture></div>
 									<div class="whyus-item__text">Бесплатная стоянка во Владивостоке</div>
 								</li>
-								<li class="whyus__item whyus-item">
+								<li class="whyus__item whyus-item" data-aos="zoom-in" delay="100" offset="">
 									<div class="whyus-item__image"><picture><source srcset="img/whyus/delivery.webp" type="image/webp"><img src="img/whyus/delivery.png" alt=""></picture></div>
 									<div class="whyus-item__text">Доставим ваш автомобиль в любой регион</div>
 								</li>
-								<li class="whyus__item whyus-item">
+								<li class="whyus__item whyus-item" data-aos="zoom-in-right" delay="150" offset="">
 									<div class="whyus-item__image"><picture><source srcset="img/whyus/time.webp" type="image/webp"><img src="img/whyus/time.png" alt=""></picture></div>
 									<div class="whyus-item__text">Привезем ваш авто за 3-4 недели</div>
 								</li>
-								<li class="whyus__item whyus-item">
+								<li class="whyus__item whyus-item" data-aos="zoom-in-down" delay="200" offset="">
 									<div class="whyus-item__image"><picture><source srcset="img/whyus/credit.webp" type="image/webp"><img src="img/whyus/credit.png" alt=""></picture></div>
 									<div class="whyus-item__text">Вы можете оформить наши услуги, а также часть средств на покупку автомобиля в кредит или рассрочку.</div>
 								</li>
 							</ul>
 						</div>
-						<div class="whyus__image"><picture><source srcset="img/whyus/image.webp" type="image/webp"><img src="img/whyus/image.png" alt="whyus"></picture></div>
+						<div class="whyus__image" data-aos="flip-down" data-aos-offset="500" data-aos-mirror="false"><picture><source srcset="img/whyus/image.webp" type="image/webp"><img src="img/whyus/image.png" alt="whyus"></picture></div>
 					</div>
 				</div>
 			</section>
 			<section id="about" class="page__about about">
 				<div class="about__container">
-					<h2 class="about__title title">О нашей компании</h2>
+					<h2 class="about__title title" data-aos="fade-right">О нашей компании</h2>
 					<div class="about__body">
-						<div class="about__main">
+						<div class="about__main" data-aos="flip-down" data-aos-offset="200" data-aos-mirror="false">
 							<picture><source srcset="img/about/main.webp" type="image/webp"><img src="img/about/main.png" alt="main"></picture>
 						</div>
-						<div class="about__text">Мы — компания, базирующаяся в Владивостоке, и специализирующаяся на пригоне автомобилей из Японии, выкупая их на аукционах, чтобы предоставить вам доступ к лучшим японским автомобилям без лишних хлопот</div>
-						<div class="about__image">
+						<div class="about__text" data-aos="fade-left">Мы — компания, базирующаяся в Владивостоке, и специализирующаяся на пригоне автомобилей из Японии, выкупая их на аукционах, чтобы предоставить вам доступ к лучшим японским автомобилям без лишних хлопот</div>
+						<div class="about__image" data-aos="flip-down" data-aos-offset="200" data-aos-mirror="false">
 							<picture><source srcset="img/about/image.webp" type="image/webp"><img src="img/about/image.png" alt="image"></picture>
 						</div>
 					</div>
@@ -666,7 +676,7 @@
 			<section class="page__auction auction">
 				<div class="auction__container">
 					<div class="auction__header">
-						<div class="auction__goto" data-da=".auction__body,767.98">
+						<div class="auction__goto" data-da=".auction__body,767.98" data-aos="fade-right">
 							<span>перейти к аукциону</span>
 							<button class="auction__btn button">
 								<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -682,32 +692,32 @@
 								</svg>
 							</button>
 						</div>
-						<h2 class="auction__title title">Аукцион</h2>
+						<h2 class="auction__title title" data-aos="fade-left" data-aos-delay="150">Аукцион</h2>
 					</div>
 					<div class="auction__body">
 						<ul class="auction__list">
-							<li class="auction__item auction-item">
+							<li class="auction__item auction-item" data-aos="zoom-in" data-aos-mirror="false">
 								<div class="auction-item__image"><picture><source srcset="img/auction/image1.webp" type="image/webp"><img src="img/auction/image1.png" alt="image1"></picture></div>
 								<div class="auction-item__name">Mitsubishi Outlander</div>
 								<div class="auction-item__year">2014</div>
 								<div class="auction-item__price">29$</div>
 								<div class="auction-item__start-price">Start in 96:20:58</div>
 							</li>
-							<li class="auction__item auction-item">
+							<li class="auction__item auction-item" data-aos="zoom-in" data-aos-delay="150" data-aos-mirror="false">
 								<div class="auction-item__image"><picture><source srcset="img/auction/image2.webp" type="image/webp"><img src="img/auction/image2.png" alt="image2"></picture></div>
 								<div class="auction-item__name">Mitsubishi Outlander</div>
 								<div class="auction-item__year">2014</div>
 								<div class="auction-item__price">29$</div>
 								<div class="auction-item__start-price">Start in 96:20:58</div>
 							</li>
-							<li class="auction__item auction-item">
+							<li class="auction__item auction-item" data-aos="zoom-in" data-aos-delay="300" data-aos-mirror="false">
 								<div class="auction-item__image"><picture><source srcset="img/auction/image3.webp" type="image/webp"><img src="img/auction/image3.png" alt="image3"></picture></div>
 								<div class="auction-item__name">Mitsubishi Outlander</div>
 								<div class="auction-item__year">2014</div>
 								<div class="auction-item__price">29$</div>
 								<div class="auction-item__start-price">Start in 96:20:58</div>
 							</li>
-							<li class="auction__item auction-item">
+							<li class="auction__item auction-item" data-aos="zoom-in" data-aos-delay="450" data-aos-mirror="false">
 								<div class="auction-item__image"><picture><source srcset="img/auction/image4.webp" type="image/webp"><img src="img/auction/image4.png" alt="image4"></picture></div>
 								<div class="auction-item__name">Mitsubishi Outlander</div>
 								<div class="auction-item__year">2014</div>
@@ -720,10 +730,10 @@
 			</section>
 			<section id="reviews" class="page__reviews reviews">
 				<div class="reviews__container">
-					<h2 class="reviews__title title">Отзывы</h2>
+					<h2 class="reviews__title title" data-aos="fade-right">Отзывы</h2>
 					<div class="reviews__slider swiper">
 						<div class="reviews__wrapper swiper-wrapper">
-							<div data-showmore class="reviews__item reviews__item_1 reviews-item swiper-slide">
+							<div data-showmore class="reviews__item reviews__item_1 reviews-item swiper-slide" data-aos="zoom-in">
 								<div class="reviews-item__image"><picture><source srcset="img/reviews/slide1.webp" type="image/webp"><img src="img/reviews/slide1.png" alt="review slide1"></picture></div>
 								<div class="reviews-item__info">
 									<div class="reviews-item__car" data-da=".reviews__item_1,767.98,first">Skoda Octavia, 2018</div>
@@ -770,7 +780,7 @@
 									</button>
 								</div>
 							</div>
-							<div data-showmore class="reviews__item reviews__item_2 reviews-item swiper-slide">
+							<div data-showmore class="reviews__item reviews__item_2 reviews-item swiper-slide" data-aos="zoom-in" data-aos-delay="150">
 								<div class="reviews-item__image"><picture><source srcset="img/reviews/slide2.webp" type="image/webp"><img src="img/reviews/slide2.png" alt="review slide2"></picture></div>
 								<div class="reviews-item__info">
 									<div class="reviews-item__car" data-da=".reviews__item_2,767.98,first">Skoda Octavia, 2018</div>
@@ -817,7 +827,7 @@
 									</button>
 								</div>
 							</div>
-							<div data-showmore class="reviews__item reviews__item_3 reviews-item swiper-slide">
+							<div data-showmore class="reviews__item reviews__item_3 reviews-item swiper-slide" data-aos="zoom-in" data-aos-delay="300">
 								<div class="reviews-item__image"><picture><source srcset="img/reviews/slide3.webp" type="image/webp"><img src="img/reviews/slide3.png" alt="review slide3"></picture></div>
 								<div class="reviews-item__info">
 									<div class="reviews-item__car" data-da=".reviews__item_3,767.98,first">Skoda Octavia, 2018</div>
@@ -864,7 +874,7 @@
 									</button>
 								</div>
 							</div>
-							<div data-showmore class="reviews__item reviews__item_4 reviews-item swiper-slide">
+							<div data-showmore class="reviews__item reviews__item_4 reviews-item swiper-slide" data-aos="zoom-in" data-aos-delay="450">
 								<div class="reviews-item__image"><picture><source srcset="img/reviews/slide4.webp" type="image/webp"><img src="img/reviews/slide4.png" alt="review slide4"></picture></div>
 								<div class="reviews-item__info">
 									<div class="reviews-item__car" data-da=".reviews__item_4,767.98,first">Skoda Octavia, 2018</div>
@@ -946,27 +956,27 @@
 			</section>
 			<section id="faq" class="page__faq faq">
 				<div class="faq__container">
-					<h2 class="faq__title title">FAQ</h2>
+					<h2 class="faq__title title" data-aos="fade-left">FAQ</h2>
 					<div class="faq__body">
-						<div class="faq__image">
+						<div class="faq__image" data-aos="zoom-in-right">
 							<picture><source srcset="img/faq/image.webp" type="image/webp"><img src="img/faq/image.png" alt="faq image"></picture>
 						</div>
 						<div class="faq__content">
-							<div class="faq__text">FAQ секция нашего сайта предоставляет ответы на наиболее часто задаваемые вопросы о процессе пригона автомобилей из Японии и наших услугах в Владивостоке</div>
+							<div class="faq__text" data-aos="zoom-in-left" data-aos-delay="150">FAQ секция нашего сайта предоставляет ответы на наиболее часто задаваемые вопросы о процессе пригона автомобилей из Японии и наших услугах в Владивостоке</div>
 							<div data-spollers data-one-spoller class="faq__spoilers spollers">
-								<div class="spollers__item">
+								<div class="spollers__item" data-aos="fade-left">
 									<button type="button" data-spoller class="spollers__title">Что такое аукционы в Японии и как они работают?<span class="button"></span></button>
 									<div class="spollers__body">Аукционы в Японии - это места, где автомобили, как правило, в отличном состоянии, продаваемые на торгах. Эти аукционы обычно привлекают множество дилеров и покупателей. Компания в Владивостоке, как посредник, участвует в этих аукционах, выкупая автомобили для своих клиентов.</div>
 								</div>
-								<div class="spollers__item">
+								<div class="spollers__item" data-aos="fade-left" data-aos-delay="200">
 									<button type="button" data-spoller class="spollers__title">Какие марки и модели авто Вы можете пригнать из Японии?<span class="button"></span></button>
 									<div class="spollers__body">Аукционы в Японии - это места, где автомобили, как правило, в отличном состоянии, продаваемые на торгах. Эти аукционы обычно привлекают множество дилеров и покупателей. Компания в Владивостоке, как посредник, участвует в этих аукционах, выкупая автомобили для своих клиентов.</div>
 								</div>
-								<div class="spollers__item">
+								<div class="spollers__item" data-aos="fade-left" data-aos-delay="400">
 									<button type="button" data-spoller class="spollers__title">Какие документы и формальности необходимы для пригона автомобиля из Японии?<span class="button"></span></button>
 									<div class="spollers__body">Аукционы в Японии - это места, где автомобили, как правило, в отличном состоянии, продаваемые на торгах. Эти аукционы обычно привлекают множество дилеров и покупателей. Компания в Владивостоке, как посредник, участвует в этих аукционах, выкупая автомобили для своих клиентов.</div>
 								</div>
-								<div class="spollers__item">
+								<div class="spollers__item" data-aos="fade-left" data-aos-delay="600">
 									<button type="button" data-spoller class="spollers__title">Как я могу узнать состояние и историю автомобиля до его пригона?<span class="button"></span></button>
 									<div class="spollers__body">Аукционы в Японии - это места, где автомобили, как правило, в отличном состоянии, продаваемые на торгах. Эти аукционы обычно привлекают множество дилеров и покупателей. Компания в Владивостоке, как посредник, участвует в этих аукционах, выкупая автомобили для своих клиентов.</div>
 								</div>
@@ -977,9 +987,9 @@
 			</section>
 			<section id="news" class="page__news news">
 				<div class="news__container">
-					<h2 class="news__title title">Новости</h2>
+					<h2 class="news__title title" data-aos="fade-right">Новости</h2>
 					<div class="news__body news__body_main">
-						<div class="news__item news-item news__item_1">
+						<div class="news__item news-item news__item_1" data-aos="zoom-in" data-aos-duration="600">
 							<div class="news-item__image">
 								<picture><source srcset="img/news/image1.webp" type="image/webp"><img src="img/news/image1.png" alt="news image1"></picture>
 							</div>
@@ -1017,7 +1027,7 @@
 								<div class="news-item__date">23.03.2023</div>
 							</div>
 						</div>
-						<div class="news__item news-item news__item_2">
+						<div class="news__item news-item news__item_2" data-aos="zoom-in" data-aos-duration="600">
 							<div class="news-item__image">
 								<picture><source srcset="img/news/image2.webp" type="image/webp"><img src="img/news/image2.png" alt="news image2"></picture>
 							</div>
@@ -1055,7 +1065,7 @@
 								<div class="news-item__date">23.03.2023</div>
 							</div>
 						</div>
-						<div class="news__item news-item news__item_3" data-da=".news__showmore-body,767.98">
+						<div class="news__item news-item news__item_3" data-da=".news__showmore-body,767.98" data-aos="zoom-in" data-aos-duration="600">
 							<div class="news-item__image">
 								<picture><source srcset="img/news/image3.webp" type="image/webp"><img src="img/news/image3.png" alt="news image3"></picture>
 							</div>
@@ -1094,7 +1104,7 @@
 								<div class="news-item__date">23.03.2023</div>
 							</div>
 						</div>
-						<div class="news__item news-item news__item_4" data-da=".news__showmore-body,767.98">
+						<div class="news__item news-item news__item_4" data-da=".news__showmore-body,767.98" data-aos="zoom-in" data-aos-duration="600">
 							<div class="news-item__image">
 								<picture><source srcset="img/news/image4.webp" type="image/webp"><img src="img/news/image4.png" alt="news image4"></picture>
 							</div>
@@ -1132,7 +1142,7 @@
 								<div class="news-item__date">23.03.2023</div>
 							</div>
 						</div>
-						<div class="news__item news-item news__item_5" data-da=".news__showmore-body,991.98">
+						<div class="news__item news-item news__item_5" data-da=".news__showmore-body,991.98" data-aos="zoom-in" data-aos-duration="600">
 							<div class="news-item__image">
 								<picture><source srcset="img/news/image6.webp" type="image/webp"><img src="img/news/image6.png" alt="news image6"></picture>
 							</div>
@@ -1170,7 +1180,7 @@
 								<div class="news-item__date">23.03.2023</div>
 							</div>
 						</div>
-						<div class="news__item news-item news__item_6" data-da=".news__showmore-body,991.98">
+						<div class="news__item news-item news__item_6" data-da=".news__showmore-body,991.98" data-aos="zoom-in" data-aos-duration="600">
 							<div class="news-item__image">
 								<picture><source srcset="img/news/image8.webp" type="image/webp"><img src="img/news/image8.png" alt="news image8"></picture>
 							</div>
@@ -1208,7 +1218,7 @@
 								<div class="news-item__date">23.03.2023</div>
 							</div>
 						</div>
-						<div class="news__item news-item news__item_7" data-da=".news__showmore-body,991.98">
+						<div class="news__item news-item news__item_7" data-da=".news__showmore-body,991.98" data-aos="zoom-in" data-aos-duration="600">
 							<div class="news-item__image">
 								<picture><source srcset="img/news/image5.webp" type="image/webp"><img src="img/news/image5.png" alt="news image5"></picture>
 							</div>
@@ -1250,7 +1260,7 @@
 					</div>
 					<div data-showmore class="news__showmore">
 						<div data-showmore-content="0" class="news__showmore-body news__body">
-							<div class="news__item news-item news__item_8">
+							<div class="news__item news-item news__item_8" data-aos="zoom-in" data-aos-duration="600">
 								<div class="news-item__image">
 									<picture><source srcset="img/news/image7.webp" type="image/webp"><img src="img/news/image7.png" alt="news image7"></picture>
 								</div>
@@ -1289,7 +1299,7 @@
 									<div class="news-item__date">23.03.2023</div>
 								</div>
 							</div>
-							<div class="news__item news-item news__item_9">
+							<div class="news__item news-item news__item_9" data-aos="zoom-in" data-aos-duration="600">
 								<div class="news-item__image">
 									<picture><source srcset="img/news/image9.webp" type="image/webp"><img src="img/news/image9.png" alt="news image9"></picture>
 								</div>
@@ -1327,7 +1337,7 @@
 									<div class="news-item__date">23.03.2023</div>
 								</div>
 							</div>
-							<div class="news__item news-item news__item_10">
+							<div class="news__item news-item news__item_10" data-aos="zoom-in" data-aos-duration="600">
 								<div class="news-item__image">
 									<picture><source srcset="img/news/image12.webp" type="image/webp"><img src="img/news/image12.png" alt="news image12"></picture>
 								</div>
@@ -1365,7 +1375,7 @@
 									<div class="news-item__date">23.03.2023</div>
 								</div>
 							</div>
-							<div class="news__item news-item news__item_11">
+							<div class="news__item news-item news__item_11" data-aos="zoom-in" data-aos-duration="600">
 								<div class="news-item__image">
 									<picture><source srcset="img/news/image10.webp" type="image/webp"><img src="img/news/image10.png" alt="news image10"></picture>
 								</div>
@@ -1403,7 +1413,7 @@
 									<div class="news-item__date">23.03.2023</div>
 								</div>
 							</div>
-							<div class="news__item news-item news__item_12">
+							<div class="news__item news-item news__item_12" data-aos="zoom-in" data-aos-duration="600">
 								<div class="news-item__image">
 									<picture><source srcset="img/news/image11.webp" type="image/webp"><img src="img/news/image11.png" alt="news image11"></picture>
 								</div>
@@ -1483,7 +1493,7 @@
 			<div class="page__contacts contacts-page">
 				<div class="contacts-page__container">
 					<div class="contacts-page__wrapper">
-						<form action="" class="contacts-page__form form">
+						<form action="" class="contacts-page__form form" data-aos="flip-left">
 							<div class="form__title">Остались вопросы? Введите ваш номер телефона, и <span class="title__accent_red">менеджер свяжется с вами</span> в ближайшее время</div>
 							<div class="form__input">
 								<div class="form__label">Ваше имя<span>*</span></div>
@@ -1503,7 +1513,7 @@
 							</div>
 						</form>
 						<div class="contacts-page__info contacts-info">
-							<div class="contacts-info__content">
+							<div class="contacts-info__content" data-aos="flip-left" data-aos-delay="150">
 								<div class="contacts-info__wrapper">
 									<div class="contacts-info__title">Наши контакты</div>
 									<div class="contacts-info__address">г.Владивосток, ул. Краснознаменская 24, оф. 3</div>
@@ -1512,7 +1522,7 @@
 									<a class="contacts-info__email" href="mailto:shop@gmail.com">shop@gmail.com</a>
 								</div>
 							</div>
-							<div class="contacts-info__image">
+							<div class="contacts-info__image" data-aos="flip-left" data-aos-delay="150">
 								<picture><source srcset="img/contacts/image.webp" type="image/webp"><img src="img/contacts/image.png" alt="contacts image"></picture>
 							</div>
 						</div>
@@ -1523,7 +1533,7 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__main main-footer">
-					<div class="main-footer__navigation footer-navigation">
+					<div class="main-footer__navigation footer-navigation" data-aos="zoom-in-right">
 						<h3 class="footer-navigation__title">Навигация:</h3>
 						<ul class="footer-navigation__list">
 							<li class="footer-navigation__item"><a href="" class="footer-navigation__link">Расчитать стоимость</a></li>
@@ -1535,7 +1545,7 @@
 							<li class="footer-navigation__item"><a href="" class="footer-navigation__link">Контакты</a></li>
 						</ul>
 					</div>
-					<div class="main-footer__contacts footer-contacts">
+					<div class="main-footer__contacts footer-contacts" data-aos="zoom-in-up" data-aos-delay="150">
 						<h3 class="footer-contacts__title">Контакты менеджеров:</h3>
 						<div class="footer-contacts__item">
 							<div class="footer-contacts__name">Николай</div>
@@ -1592,7 +1602,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="main-footer__address footer-address">
+					<div class="main-footer__address footer-address" data-aos="zoom-in-down" data-aos-delay="300">
 						<h3 class="footer-address__title">Адрес офиса:</h3>
 						<div class="footer-address__text">г.Владивосток, ул. Краснознаменская 24, оф. 3</div>
 						<div class="footer-address__links">
@@ -1611,13 +1621,13 @@
 							</a>
 						</div>
 					</div>
-					<div class="main-footer__map">
+					<div class="main-footer__map" id="map" data-aos="zoom-in-left" data-aos-delay="450">
 						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.8331958296503!2d30.286558142876796!3d60.06756496281554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963524d6f986cf%3A0xb1c5d1f10487d75b!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMTIsIFNhbmt0LVBldGVyYnVyZywgUnVzc2lhLCAxOTQzNjI!5e0!3m2!1sen!2sau!4v1709326520909!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 					</div>
 				</div>
 				<div class="footer__bottom bottom-footer">
-					<a href="#" class="bottom-footer__copyright">Copyright © 2023 </a>
-					<a href="#" class="bottom-footer__privacy">Политика конфиденциальности</a>
+					<a href="#" class="bottom-footer__copyright" data-aos="zoom-right" data-aos-offset="30">Copyright © 2023 </a>
+					<a href="#" class="bottom-footer__privacy" data-aos="zoom-left" data-aos-offset="30">Политика конфиденциальности</a>
 				</div>
 			</div>
 		</footer>
@@ -1705,7 +1715,7 @@
 									</div>
 								</div>
 								<div class="tabs__body">
-									<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/eqsU-kBOjkk?si=ZTGZQETxUj_jUHNd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
 								</div>
 							</div>
 						</div>
@@ -1714,7 +1724,64 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240303040820"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js?_v=20240304011021"></script>
+	<script>
+		AOS.init({
+			// Global settings:
+			disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+			startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+			initClassName: 'aos-init', // class applied after initialization
+			animatedClassName: 'aos-animate', // class applied on animation
+			useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+			disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+			debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+			throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+			// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+			offset: 120, // offset (in px) from the original trigger point
+			delay: 0, // values from 0 to 3000, with step 50ms
+			duration: 400, // values from 0 to 3000, with step 50ms
+			easing: 'ease', // default easing for AOS animations
+			once: false, // whether animation should happen only once - while scrolling down
+			mirror: true, // whether elements should animate out while scrolling past them
+			anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+		});
+	</script>
+
+	<script>
+		(g => {
+			var h, a, k, p = "The Google Maps JavaScript API",
+				c = "google",
+				l = "importLibrary",
+				q = "__ib__",
+				m = document,
+				b = window;
+			b = b[c] || (b[c] = {});
+			var d = b.maps || (b.maps = {}),
+				r = new Set,
+				e = new URLSearchParams,
+				u = () => h || (h = new Promise(async (f, n) => {
+					await (a = m.createElement("script"));
+					e.set("libraries", [...r] + "");
+					for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+					e.set("callback", c + ".maps." + q);
+					a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+					d[q] = f;
+					a.onerror = () => h = n(Error(p + " could not load."));
+					a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+					m.head.append(a)
+				}));
+			d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+		})
+		({
+			key: "AIzaSyA8fBEDgVUnQfFEGVhnTi77DB0SC0kl0ls",
+			v: "beta"
+		});
+	</script>
+	<script src="js/app.min.js?_v=20240304011021"></script>
+
 </body>
 
 </html>

@@ -3257,10 +3257,20 @@
     (() => {
         "use strict";
         const flsModules = {
-            ShowFixedHeader() {
+            showFixedHeader() {
                 const header = document.querySelector(".nav-header");
+                header.classList.add("visible");
                 document.addEventListener("scroll", (() => {
                     if (document.documentElement.scrollTop === header.scrollTop) header.classList.add("visible"); else header.classList.remove("visible");
+                }));
+            },
+            showYoutubeIframe() {
+                const carTitles = document.querySelectorAll(".car-details__tabs .tabs__title");
+                const carBody = document.querySelectorAll(".car-details__tabs .tabs__body")[2];
+                carTitles.forEach((title => {
+                    title.addEventListener("click", (() => {
+                        if (title.innerHTML === "Видеообзор") carBody.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/eqsU-kBOjkk?si=Wf6wcWBupjXZtAvx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'; else carBody.innerHTML = "";
+                    }));
                 }));
             }
         };
@@ -6738,6 +6748,7 @@
                             target
                         }
                     }));
+                    AOS.refresh();
                 }), duration);
             }
         };
@@ -6772,6 +6783,7 @@
                             target
                         }
                     }));
+                    AOS.refresh();
                 }), duration);
             }
         };
@@ -8068,7 +8080,28 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
-        flsModules.ShowFixedHeader();
+        let map;
+        async function initMap() {
+            const position = {
+                lat: -25.344,
+                lng: 131.031
+            };
+            const {Map} = await google.maps.importLibrary("maps");
+            const {AdvancedMarkerView} = await google.maps.importLibrary("marker");
+            map = new Map(document.getElementById("map"), {
+                zoom: 4,
+                center: position,
+                mapId: "DEMO_MAP_ID"
+            });
+            new AdvancedMarkerView({
+                map,
+                position,
+                title: "Uluru"
+            });
+        }
+        initMap();
+        flsModules.showFixedHeader();
+        flsModules.showYoutubeIframe();
         window["FLS"] = true;
         isWebp();
         menuInit();

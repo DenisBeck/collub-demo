@@ -1370,18 +1370,14 @@ body::after {
   width: 100%;
 }
 
-.main-footer__map iframe {
-  width: 100%;
-}
-
 @supports (height: clamp( 13.4375rem , 11.8639575972rem  +  6.7137809187vw , 19.375rem )) {
-  .main-footer__map iframe {
+  .main-footer__map {
     height: clamp( 13.4375rem , 11.8639575972rem  +  6.7137809187vw , 19.375rem );
   }
 }
 
 @supports not (height: clamp( 13.4375rem , 11.8639575972rem  +  6.7137809187vw , 19.375rem )) {
-  .main-footer__map iframe {
+  .main-footer__map {
     height: calc(13.4375rem + 5.9375 * (100vw - 23.4375rem) / 88.4375);
   }
 }
@@ -2240,10 +2236,6 @@ body::after {
   color: #00558D;
 }
 
-.catalog-showmore {
-  text-align: center;
-}
-
 .catalog-showmore__content {
   display: -ms-grid;
   display: grid;
@@ -2260,6 +2252,13 @@ body::after {
       justify-self: center;
   max-width: 25rem;
   width: 100%;
+}
+
+.catalog-showmore__more {
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .catalog-showmore__reverse {
@@ -4583,18 +4582,14 @@ body::after {
   width: 100%;
 }
 
-.main-footer__map iframe {
-  width: 100%;
-}
-
 @supports (height: clamp( 13.4375rem , 11.8639575972rem  +  6.7137809187vw , 19.375rem )) {
-  .main-footer__map iframe {
+  .main-footer__map {
     height: clamp( 13.4375rem , 11.8639575972rem  +  6.7137809187vw , 19.375rem );
   }
 }
 
 @supports not (height: clamp( 13.4375rem , 11.8639575972rem  +  6.7137809187vw , 19.375rem )) {
-  .main-footer__map iframe {
+  .main-footer__map {
     height: calc(13.4375rem + 5.9375 * (100vw - 23.4375rem) / 88.4375);
   }
 }
@@ -5453,10 +5448,6 @@ body::after {
   color: #00558D;
 }
 
-.catalog-showmore {
-  text-align: center;
-}
-
 .catalog-showmore__content {
   display: -ms-grid;
   display: grid;
@@ -5473,6 +5464,13 @@ body::after {
       justify-self: center;
   max-width: 25rem;
   width: 100%;
+}
+
+.catalog-showmore__more {
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .catalog-showmore__reverse {
@@ -7614,28 +7612,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 1560px) {
-  .catalog__list {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .catalog-showmore__content {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .catalog__list {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .catalog-showmore__content {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 @media (max-width: 1530px) {
   .advantages__list {
     -ms-grid-columns: (1fr)[2];
@@ -7655,6 +7631,28 @@ button.swiper-pagination-bullet {
   }
 
   .benefits__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1430px) {
+  .catalog__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog-showmore__content {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog-showmore__content {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
@@ -7861,28 +7859,6 @@ button.swiper-pagination-bullet {
   .credit__conditions {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 1150px) {
-  .catalog__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .catalog-showmore__content {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .catalog__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .catalog-showmore__content {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -8318,7 +8294,7 @@ button.swiper-pagination-bullet {
   }
 
   .steps__body::after {
-    bottom: calc((100% - 200px) / 5 - 51px);
+    bottom: calc((100% - 200px) / 5 - 46px);
   }
 
   .steps__list::before,
@@ -8505,7 +8481,7 @@ button.swiper-pagination-bullet {
   }
 
   .steps__body::after {
-    bottom: calc((100% - 200px) / 5 - 51px);
+    bottom: calc((100% - 200px) / 5 - 46px);
   }
 
   .steps__list::before,
